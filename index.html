@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>User Profile</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="content">
+            
+            <div class="user-profile">
+                <div class="container">
+
+                    <div class="user-profile__title">
+                        <h2>User Profile</h2>
+                        <span></span>
+                    </div>
+
+                    <div class="user-profile__form">
+                        <form id="form" action="#" method="post" target="_blank">
+
+                            <!-- Photo -->
+                            <div class="form-group">
+                                <div class="form-group__img">
+                                    <div class="img__user-avatar">
+                                        <!-- <img src="/img/avatar/default-avatar.png" alt="user-avatar" id="user-avatar"> -->
+                                        <div id="user-avatar"></div>
+                                    </div>
+                                    <div class="img__user-name">
+                                        <h2>Alaa Mohamed</h2>
+                                        <h4>Product Design</h4>
+                                        <p>Eastern European Time (EET), Cairo UTC +3</p>
+                                    </div>
+                                    <div class="img__btn-upload-avatar">
+                                        <input type="file" id="upload-avatar" name="btn-upload-avatar" accept="image/png, image/jpeg" />
+                                        <button class="upload-avatar-btn"><span>Upload New Photo</span></button>
+                                    </div>
+                                    <div class="img__btn-reset-avatar">
+                                        <button type="reset" value="Delete" id="btn-reset-avatar">
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-marking"></div>
+
+                            <!-- Name -->
+                            <div class="form-group">
+                                <div class="form-group__name">
+                                    <div class="name__main-name">
+                                        <div class="name__first-name">
+                                            <label for="first-name" class="form-title">First Name</label>
+                                            <input type="text" id="first-name" name="first-name" placeholder="eg. Alaa" class="form__input _req">
+                                        </div>
+                                        <div class="name__last-name">
+                                            <label for="last-name" class="form-title">Last Name</label>
+                                            <input type="text" id="last-name" name="last-name" placeholder="eg. Mohamed" class="form__input _req">
+                                        </div>
+                                    </div>
+                                    <div class="name__user-name">
+                                        <label for="user-name" class="form-title">User Name</label>
+                                        <input type="text" id="user-name" name="user-name" placeholder="eg. alaa.mohamed" class="form__input _req">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-marking"></div>
+
+                            <!-- Contacts -->
+                            <div class="form-group">
+                                <div class="form-group__contacts">
+                                    <div class="contacts__user-email">
+                                        <div class="contacts-input" id="input-icon">
+                                            <img src="/img/contacts/user-email.svg" alt="user-email">
+                                        </div>
+                                        <label for="user-email" class="form-title">Email Address</label>
+                                        <input type="email" id="form-icon" name="user-email" placeholder="template@temp.com" class="form__input _req _email">
+                                    </div>
+                                    <div class="contacts__user-phone">
+                                        <div class="contacts-input" id="input-icon">
+                                            <img src="/img/contacts/user-phone.svg" alt="user-phone">
+                                        </div>
+                                        <label for="user-phone" class="form-title">Phone Number</label>
+                                        <input type="tel" id="form-icon" name="user-phone" placeholder="8 (920) 123 45 67" class="form__input _req">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-marking"></div>
+
+                            <!-- Companies -->
+                            <div class="form-group form-group-companies-block">
+                                <div class="companies__title">
+                                    <h2>Companies</h2>
+                                </div>
+                                <ul class="options">
+                                    <li class="options-item">
+                                        <input type="radio" name="company" id="pro-crew" value="pro-crew-company" checked>
+                                        <label for="pro-crew" class="options-label"><span>ProCrew</span></label>
+                                    </li>
+                                    <li class="options-item">
+                                        <input type="radio" name="company" id="noon" value="noon-company">
+                                        <label for="noon" class="options-label"><span>Noon</span></label>
+                                    </li>
+                                    <li class="options-item">
+                                        <input type="radio" name="company" id="lamasa-tech" value="lamasa-tech-company">
+                                        <label for="lamasa-tech" class="options-label"><span>LamasaTech</span></label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="form-group form-group-companies-block">
+                                <div class="companies__title">
+                                    <h2>Companies</h2>
+                                </div>
+                                <ul class="form-group__companies-list">
+                                    <li>
+                                        <input type="radio" id="radio-1" name="radio">
+                                        <label for="radio-1">
+                                            <img src="/img/companies/company.svg" alt="">
+                                            <span class="fa fa-cc-paypal" aria-hidden="true">ProCrew</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="radio-2" name="radio">
+                                        <label for="radio-2">
+                                            <img src="/img/companies/company.svg" alt="">
+                                            <span class="fa fa-credit-card-alt" aria-hidden="true">Noon</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="radio-3" name="radio">
+                                        <label for="radio-3">
+                                            <img src="/img/companies/company.svg" alt="">
+                                            <span class="fa fa-cc-visa" aria-hidden="true">LamasaTech</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div> -->
+
+                            <div class="form-marking"></div>
+
+                            <!-- Location -->
+                            <div class="form-group">
+                                <div class="form-group__location">
+                                    <div class="form-title">Location</div>
+                                    <select name="user-location" id="user-location">
+                                        <option value="1">Russia</option>
+                                        <option value="2">Germany</option>
+                                        <option value="3">USA</option>
+                                        <option value="4">Canada</option>
+                                        <option value="5">Norway</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-marking"></div>
+
+                            <!-- Password -->
+                            <div class="form-group">
+                                <div class="form-group__password">
+                                    <div class="user-change-pass">
+                                        <div class="user__current-pass">
+                                            <div class="password-icon">
+                                                <img src="/img/password/user-pass.svg" alt="">
+                                            </div>
+                                            <label for="current-pass">Current Password</label>
+                                            <input type="password" id="pass-input" name="current-pass" minlength="8" maxlength="16" class="form__input _req" />
+                                            <a href="#" class="current-pass-control pass-control"><img src="/img/password/show-user-pass.svg" alt=""></a>
+                                        </div>
+                                        <div class="user__new-pass">
+                                            <div class="password-icon">
+                                                <img src="/img/password/user-pass.svg" alt="">
+                                            </div>
+                                            <label for="new-pass">New Password</label>
+                                            <input type="password" id="pass-input" name="new-pass" minlength="8" maxlength="16" class="form__input _req" />
+                                            <a href="#" class="new-pass-control pass-control"><img src="/img/password/show-user-pass.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="user__confirm-new-pass">
+                                        <div class="password-icon">
+                                            <img src="/img/password/user-pass.svg" alt="">
+                                        </div>
+                                        <label for="confirm-new-pass">New Password</label>
+                                        <input type="password" id="pass-input" name="confirm-new-pass" minlength="8" maxlength="16" class="form__input _req" />
+                                        <a href="#" class="confirm-new-pass-control pass-control"><img src="/img/password/show-user-pass.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cancel and submit form buttons -->
+                            <div class="form-group">
+                                <div class="form-group__form-cancel-save-btns">
+                                    <div class="form__cancel-btn">
+                                        <button type="reset" class="cancel-btn">Cancel</button>
+                                    </div>
+                                    <div class="form__save-btn">
+                                        <button type="submit" class="save-btn"><p>Save Changes</p></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="/js/show-password.js"></script>
+</body>
+</html>
